@@ -104,7 +104,22 @@ header{
   border-radius: 10px;
   color: white;
   font-size: 15px;
-  width: calc(var(--size) / 5278 * 100%);
+  width: calc(var(--size) / 1282 * 100%);
+
+  display: flex;
+  justify-content: flex-end; /* Đẩy chữ về bên phải */
+  align-items: center;      /* Căn giữa chữ theo chiều dọc */
+  padding-right: 8px;
+  box-sizing: border-box;   /* Quan trọng để padding không làm tăng chiều dài thanh */
+  min-width: 40px;
+}
+
+.bar-fill-12 {
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  width: calc(var(--size) / 139 * 100%);
 
   display: flex;
   justify-content: flex-end; /* Đẩy chữ về bên phải */
