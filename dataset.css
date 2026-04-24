@@ -1,0 +1,204 @@
+/* Overview page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7f5;
+    color: #333;
+    padding: 20px;
+}
+header{
+    color: #2d5a27;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+.card {
+  background-color: #f9fbf9;
+  width: 250px;
+  height: 380px;
+  border: 1px solid #bbcbbb;
+  border-radius: 15px;
+  overflow: hidden; 
+  text-decoration: none; 
+  color: black;
+}
+.card h3 {
+    color: #2d5a27; 
+    margin-left: 20px;
+}
+.card p {
+    color: #5a5959;
+    margin-top: -8px;
+    margin-left: 20px;
+}
+
+/*dataset page*/
+/* left part */
+.bar-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  height: 20px;
+}
+
+.bar-fill-4 {
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  width: calc(var(--size) / 13500 * 100%);
+
+  display: flex;
+  justify-content: flex-end; /* Đẩy chữ về bên phải */
+  align-items: center;      /* Căn giữa chữ theo chiều dọc */
+  padding-right: 8px;
+  box-sizing: border-box;   /* Quan trọng để padding không làm tăng chiều dài thanh */
+  min-width: 40px;
+}
+
+.bar-fill-6 {
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  width: calc(var(--size) / 2131 * 100%);
+
+  display: flex;
+  justify-content: flex-end; /* Đẩy chữ về bên phải */
+  align-items: center;      /* Căn giữa chữ theo chiều dọc */
+  padding-right: 8px;
+  box-sizing: border-box;   /* Quan trọng để padding không làm tăng chiều dài thanh */
+  min-width: 40px;
+}
+
+.bar-fill-3 {
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  width: calc(var(--size) / 144 * 100%);
+
+  display: flex;
+  justify-content: flex-end; /* Đẩy chữ về bên phải */
+  align-items: center;      /* Căn giữa chữ theo chiều dọc */
+  padding-right: 8px;
+  box-sizing: border-box;   /* Quan trọng để padding không làm tăng chiều dài thanh */
+  min-width: 40px;
+}
+
+.bar-fill-11 {
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  width: calc(var(--size) / 1282 * 100%);
+
+  display: flex;
+  justify-content: flex-end; /* Đẩy chữ về bên phải */
+  align-items: center;      /* Căn giữa chữ theo chiều dọc */
+  padding-right: 8px;
+  box-sizing: border-box;   /* Quan trọng để padding không làm tăng chiều dài thanh */
+  min-width: 40px;
+}
+
+.bar-fill-12 {
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  width: calc(var(--size) / 139 * 100%);
+
+  display: flex;
+  justify-content: flex-end; /* Đẩy chữ về bên phải */
+  align-items: center;      /* Căn giữa chữ theo chiều dọc */
+  padding-right: 8px;
+  box-sizing: border-box;   /* Quan trọng để padding không làm tăng chiều dài thanh */
+  min-width: 40px;
+}
+
+.bar-group span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.general-in4{
+    padding: 12px;
+    border: 2px solid #2d6a4fa9;
+    background-color: #eaf2ebda;
+    border-radius: 10px;
+}
+
+.general-in4 p{
+    margin-left: 12px;
+}
+
+/* divide*/
+
+.main-container {
+    display: flex;         /* Kích hoạt chế độ dàn hàng ngang */
+    gap: 80px;            /* Tạo khoảng cách giữa 2 section */
+    padding: 20px;
+    max-width: 95%;    /* Giới hạn độ rộng tổng để không bị quá loãng */
+    margin: 0 auto;       /* Căn toàn bộ nội dung ra giữa màn hình */
+}
+
+.main-container section {
+    flex: 1;              /* Mỗi section sẽ tự động chia đều không gian (50/50) */
+    width: 50%;           /* Đảm bảo mỗi cái chiếm nửa trang */
+    margin: 0;            /* Bỏ margin mặc định để tránh bị đẩy xuống dòng */
+    box-sizing: border-box; 
+}
+
+/* Optional: Để lên điện thoại nó tự xuống dòng cho dễ đọc */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Chuyển thành hàng dọc trên màn hình nhỏ */
+    }
+    .main-container section {
+        width: 100%;
+    }
+}
+
+/*right part*/
+.sample-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*chia 3 cot */
+  gap: 20px;
+  padding: 10px;
+}
+
+.disease-card {
+    margin: 0;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden; /* Để ảnh không bị tràn ra ngoài góc bo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.disease-card img {
+    width: 100%;
+    height: 150px; /* Cố định chiều cao để các ô bằng nhau */
+    object-fit: cover; /* Cắt ảnh cho vừa khung mà không bị méo */
+}
+
+.disease-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2d5a27;
+    background-color: #f9fbf9;
+}
